@@ -139,3 +139,27 @@
 
 
 
+## **DB 설계서**
+
+### **테이블 명세서**
+
+![](https://lh4.googleusercontent.com/WNwUm3toMZozDXhXtzoHfFzVFlDjIOnK57vC02WULQ0pdPVh7wrMVdSCJpHyBEP2hskUr07lD7iHOJsYFtK5SHvJdjYLLTmD45Imv1chniMvOV3Djn9G7EeQP9xSXilpYmdjEzF0)
+
+![](https://lh5.googleusercontent.com/n9LwhlSYuH5-arl7TjdhLZfFHYbY2Ai-Ov5u9zT6aONLHwhvdZKUBwlMyOfY94Yz9GXjLg-71Kyy40D_NsDswmLAI0_u4-28aAr7MEYx5vgLThmMou4--QQVIGL_XSCP_c_LQoXb)
+
+![](https://lh6.googleusercontent.com/GIengpvjV-AAoSu9Sn3Od0H9QL7dO2W2ULTGxWVfTzxSllAsdxEVh-FxbrEZlOXDE6G-JIU6V571psGn7p_zKWBhe4Y2x7dP0LaZUaRvzOWcWI_Ntt5wNWyTDv2LP2UGkYpzpzha)
+
+### **객체 연관관계**
+
+![](.gitbook/assets/2021-02-24-11.12.48.png)
+
+### **ERD logical**
+
+![](https://lh5.googleusercontent.com/148uwo939SJuTeo9PKVWSUR9-cSqGx0c6U9jXfMlg8C09Mlk4e1ftPL9VIeXTJtQmmlUx0psHta0M096msIHknWWJXqKEMWcTuR5EsEfErHOgRqkz5tztew4NW4QERbsa_gXKKms)
+
+### **ERD physical**
+
+![](https://lh5.googleusercontent.com/yRnCTIKd4tEhHVa2SKja2drIKrLJGe8xrniEpiURK--j9mcIqMVQP9_b92el32CgYaFtGC12CsP7qKqpywzS2Vet2ACWfrAEWJeJ29NjKm8ehSIkxpFnXO8aPD6ogm1wYxBbv3fK)
+
+## \*\*\*\*
+

@@ -36,15 +36,20 @@
 **\(그림 0. 메인화면\)👇**![](https://lh5.googleusercontent.com/ijlhYTyTOy3fH_VJf5p9HVHe2mUVrjqX6n-Mj0zaUeHy3RifmJnvaNz-WTaWtvGa9iNr1pE7lUOqHbT-rXv5QQT7fVEXp5L4VojuQG_6eoP1qUkDsMleT0hUlO8Dfx2YnTXN6uDD)  
 ****
 
-**\(그림 1.\)👇 board title 수정 가능 \[아래사진\]\)         \(그림 2.\) 👇 +Add another list 버튼 \[아래사진\]\)**
+**\(그림 1.\)👇 board title 수정 가능 \[아래사진\]\)**         
 
-  ****![](https://lh3.googleusercontent.com/WXPmCYhfGNjEIUnWJsPwR2rKB1YXjGBBX0pFSju4gWRBW9Hhl-fVbH6XQxIlTzSW8It3Xg7lKz-R4WKU2qs3nOVMlY7z5Hko1lMHMqTsPaRb71MBFJIfIIG-JxmssxKjfwjgIFWw) ****![](https://lh4.googleusercontent.com/Fa2rNDcw6imDrl3H_R1gqAjL0Kzwp0MVq-oYxuAHC07m-JSVhnTE_OcAeOhx8QQxZ4WW6HG-61GB8VouxhlyxI7EX_5mwsqspLf_O4dHUwu3KusfsX1jwSPYgjJzKVm4IYv6SN3s)  
-****
+  ****![](https://lh3.googleusercontent.com/WXPmCYhfGNjEIUnWJsPwR2rKB1YXjGBBX0pFSju4gWRBW9Hhl-fVbH6XQxIlTzSW8It3Xg7lKz-R4WKU2qs3nOVMlY7z5Hko1lMHMqTsPaRb71MBFJIfIIG-JxmssxKjfwjgIFWw) ****
 
-**\(그림 3.\) 👇… show menu 를 클릭하면 나오는 화면.  \(그림 3-1.\) 예시 화면 👇👇**
+**\(그림 2.\) 👇 +Add another list 버튼 \[아래사진\]\)**![](https://lh4.googleusercontent.com/Fa2rNDcw6imDrl3H_R1gqAjL0Kzwp0MVq-oYxuAHC07m-JSVhnTE_OcAeOhx8QQxZ4WW6HG-61GB8VouxhlyxI7EX_5mwsqspLf_O4dHUwu3KusfsX1jwSPYgjJzKVm4IYv6SN3s)
 
-![](https://lh6.googleusercontent.com/s9LWErSkeGB-um096CWXpX7n92ubjudpz4O_PbnUeyv9cG1l_Op83DO__oxOmyfSwdfiJf0-a8AuCOeKJFvJl96lIx5D_bKtrdnb1rWm9YrXbfP-Y6zFTb0VeA0ujr6nzFKndGx3)![](https://lh3.googleusercontent.com/9sAL5PDyrt7a5xX9A90cgT7aDEikmbva9PnhK0lDbz5abHXgf2bkkZ50Lw0aiEhw5jUz5DrUHbEnIzLm7gVJWnGlFmee3nLYnAkE2A_Ocrksq-M95iTMzQU8Agl4feWP3yZ0r3cm)  
-****
+**\(그림 3.\) 👇… show menu 를 클릭하면 나오는 화면.**  
+
+![](https://lh6.googleusercontent.com/s9LWErSkeGB-um096CWXpX7n92ubjudpz4O_PbnUeyv9cG1l_Op83DO__oxOmyfSwdfiJf0-a8AuCOeKJFvJl96lIx5D_bKtrdnb1rWm9YrXbfP-Y6zFTb0VeA0ujr6nzFKndGx3)
+
+**\(그림 3-1.\) 예시 화면 👇👇**
+
+\*\*\*\*![](https://lh3.googleusercontent.com/9sAL5PDyrt7a5xX9A90cgT7aDEikmbva9PnhK0lDbz5abHXgf2bkkZ50Lw0aiEhw5jUz5DrUHbEnIzLm7gVJWnGlFmee3nLYnAkE2A_Ocrksq-M95iTMzQU8Agl4feWP3yZ0r3cm)  
+**\(예시는 list 라는 이름을 사용하고, 실제 이름으로 list 대신에 pocket으로 사용하겠습니다.\)**
 
 **그림 0 에서**
 
@@ -64,7 +69,7 @@
 
 * **\[   \] \(그림 3\) 을 보면 … show menu 버튼이 있는데 여기서 change background 와 close board 버튼만 따로 밖으로 빼낼 예정이다.**
 
-### **list 관련 기능**
+### **list\(pocket\) 관련 기능**
 
 **\(그림 0.\) 👇Add a list 버튼 \(그림 1.\) 👇 버튼 클릭 후 나오는 list title 입력 폼**
 
@@ -143,23 +148,19 @@
 
 ### **테이블 명세서**
 
-![](https://lh4.googleusercontent.com/WNwUm3toMZozDXhXtzoHfFzVFlDjIOnK57vC02WULQ0pdPVh7wrMVdSCJpHyBEP2hskUr07lD7iHOJsYFtK5SHvJdjYLLTmD45Imv1chniMvOV3Djn9G7EeQP9xSXilpYmdjEzF0)
+![](.gitbook/assets/image%20%281%29.png)
 
-![](https://lh5.googleusercontent.com/n9LwhlSYuH5-arl7TjdhLZfFHYbY2Ai-Ov5u9zT6aONLHwhvdZKUBwlMyOfY94Yz9GXjLg-71Kyy40D_NsDswmLAI0_u4-28aAr7MEYx5vgLThmMou4--QQVIGL_XSCP_c_LQoXb)
+![](.gitbook/assets/image%20%282%29.png)
 
-![](https://lh6.googleusercontent.com/GIengpvjV-AAoSu9Sn3Od0H9QL7dO2W2ULTGxWVfTzxSllAsdxEVh-FxbrEZlOXDE6G-JIU6V571psGn7p_zKWBhe4Y2x7dP0LaZUaRvzOWcWI_Ntt5wNWyTDv2LP2UGkYpzpzha)
+![](.gitbook/assets/image%20%283%29.png)
 
-### **객체 연관관계**
+### **객체 연관관계로 표**
 
 ![](.gitbook/assets/2021-02-24-11.12.48.png)
 
-### **ERD logical**
+### **DB 관점에서 표현**
 
-![](https://lh5.googleusercontent.com/148uwo939SJuTeo9PKVWSUR9-cSqGx0c6U9jXfMlg8C09Mlk4e1ftPL9VIeXTJtQmmlUx0psHta0M096msIHknWWJXqKEMWcTuR5EsEfErHOgRqkz5tztew4NW4QERbsa_gXKKms)
+![](.gitbook/assets/image%20%284%29.png)
 
-### **ERD physical**
 
-![](https://lh5.googleusercontent.com/yRnCTIKd4tEhHVa2SKja2drIKrLJGe8xrniEpiURK--j9mcIqMVQP9_b92el32CgYaFtGC12CsP7qKqpywzS2Vet2ACWfrAEWJeJ29NjKm8ehSIkxpFnXO8aPD6ogm1wYxBbv3fK)
-
-## \*\*\*\*
 

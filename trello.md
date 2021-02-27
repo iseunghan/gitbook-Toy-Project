@@ -164,3 +164,73 @@
 
 
 
+## API 정의**서**
+
+### GET /boards
+
+GET 요청으로 전체 보드를 조회할 수 있습니다.
+
+#### Response Data  :
+
+#### Status 200: OK
+
+| Name | type | Data |
+| :---: | :---: | :---: |
+| boards | List | 보드 객체 |
+
+
+
+### GET /boards/{board\_id}
+
+
+
+### GET /boards/{board\_id}/pockets
+
+
+
+### GET /boards/{board\_id}/pockets/{pocket\_id}
+
+
+
+### GET /boards/{board\_id}/cards/{card\_id}
+
+
+
+### GET /boards/{board\_id}/cards
+
+
+
+### POST /boards
+
+
+
+### POST /boards/{board\_id}/pockets
+
+
+
+### POST /boards/{board\_id}/cards
+
+
+
+### PUT /boards/{board\_id}
+
+
+
+### PUT /boards/{board\_id}/pockets/{pocket\_id}
+
+
+
+### PUT /boards/{board\_id}/cards/{card\_id}
+
+
+
+### DELETE /boards/{board\_id}
+
+
+
+### DELETE /boards/{board\_id}/pockets/{pocket\_id}
+
+
+
+### DELETE /boards/{board\_id}/cards/{card\_id}
+

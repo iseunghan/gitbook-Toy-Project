@@ -166,29 +166,53 @@
 
 ## API 정의**서**
 
-### GET /boards
+### 전체 보드 조회
+
+#### GET /boards
 
 GET 요청으로 전체 보드를 조회할 수 있습니다.
 
 #### Response Data  :
 
-#### Status 200: OK
-
-| Name | type | Data |
-| :---: | :---: | :---: |
-| boards | List | 보드 객체 |
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | boards | List | 전체 보드가 담긴 리스트를 받습니다. |
 
 
 
-### GET /boards/{board\_id}
+### 하나의 보드 조회
+
+#### GET /boards/{board\_id}
+
+GET 요청으로 하나의 보드를 조회할 수 있습니다.
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | boards | Board | 조회한 하나의 보드의 객체입니다. |
 
 
 
-### GET /boards/{board\_id}/pockets
+### 하나의 보드의 모든 포켓 조회
+
+#### GET /boards/{board\_id}/pockets
+
+GET 요청으로 하나의 보드의 모든 포켓 조회할 수 있습니다.
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | pockets | List | 하나의 보드의 모든 포켓이 담긴 리스트입니다. |
 
 
 
-### GET /boards/{board\_id}/pockets/{pocket\_id}
+
+
+### 하나의 보드의 특정 포켓 조회
+
+#### GET /boards/{board\_id}/pockets/{pocket\_id}
 
 
 

@@ -154,7 +154,7 @@
 
 ![](.gitbook/assets/image%20%283%29.png)
 
-### **객체 연관관계로 표**
+### **객체 연관관계로 표현**
 
 ![](.gitbook/assets/2021-02-24-11.12.48.png)
 
@@ -165,6 +165,8 @@
 
 
 ## API 정의**서**
+
+## GET
 
 ### 전체 보드 조회
 
@@ -198,7 +200,7 @@ GET 요청으로 하나의 보드를 조회할 수 있습니다.
 
 #### GET /boards/{board\_id}/pockets
 
-GET 요청으로 하나의 보드의 모든 포켓 조회할 수 있습니다.
+GET 요청으로 보드의 모든 포켓 조회할 수 있습니다.
 
 #### Response Data  :
 
@@ -214,47 +216,105 @@ GET 요청으로 하나의 보드의 모든 포켓 조회할 수 있습니다.
 
 #### GET /boards/{board\_id}/pockets/{pocket\_id}
 
+GET 요청으로 보드의 포켓 하나를 조회할 수 있습니다.
 
+#### Response Data  :
 
-### GET /boards/{board\_id}/cards/{card\_id}
-
-
-
-### GET /boards/{board\_id}/cards
-
-
-
-### POST /boards
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | pocket | Pocket | 조회한 하나의 포켓 객체를 받아옵니다. |
 
 
 
-### POST /boards/{board\_id}/pockets
+
+
+### 하나의 보드의 모든 카드 조회
+
+#### GET /boards/{board\_id}/cards
+
+GET 요청으로 보드의 모든 카드를 조회할 수 있습니다.
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | cards | Card | 해당 보드의 모든 카드가 담긴 리스트를 받아옵니다. |
 
 
 
-### POST /boards/{board\_id}/cards
+
+
+### 하나의 보드의 특정 카드 상세 조회
+
+#### GET /boards/{board\_id}/cards/{card\_id}
+
+GET 요청으로 보드의 특정 카드의 세부사항을 조회할 수 있습니다.
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | card | Card | 해당 보드에 특정 카드 객체를 받아옵니다. |
 
 
 
-### PUT /boards/{board\_id}
+## POST
 
 
 
-### PUT /boards/{board\_id}/pockets/{pocket\_id}
+### 하나의 보드 추가하기
+
+#### POST /boards
 
 
 
-### PUT /boards/{board\_id}/cards/{card\_id}
+### 보드에 하나의 포켓 추가하기
+
+#### POST /boards/{board\_id}/pockets
 
 
 
-### DELETE /boards/{board\_id}
+### 보드에 하나의 카드 추가하기
+
+#### POST /boards/{board\_id}/cards
 
 
 
-### DELETE /boards/{board\_id}/pockets/{pocket\_id}
+## PUT
+
+### 보드 수정하기
+
+#### PUT /boards/{board\_id}
 
 
 
-### DELETE /boards/{board\_id}/cards/{card\_id}
+### 포켓 수정하기
+
+#### PUT /boards/{board\_id}/pockets/{pocket\_id}
+
+
+
+### 카드 수정하기
+
+#### PUT /boards/{board\_id}/cards/{card\_id}
+
+
+
+## DELETE
+
+### 하나의 보드 삭제하기
+
+#### DELETE /boards/{board\_id}
+
+
+
+### 하나의 포켓 삭제하기
+
+#### DELETE /boards/{board\_id}/pockets/{pocket\_id}
+
+
+
+### 하나의 카드 삭제하기
+
+#### DELETE /boards/{board\_id}/cards/{card\_id}
 

@@ -178,7 +178,7 @@ GET 요청으로 전체 보드를 조회할 수 있습니다.
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | boards | List | 전체 보드가 담긴 리스트를 받습니다. |
+| 200 | boards | List | 전체 보드가 담긴 리스트 |
 
 
 
@@ -188,11 +188,17 @@ GET 요청으로 전체 보드를 조회할 수 있습니다.
 
 GET 요청으로 하나의 보드를 조회할 수 있습니다.
 
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 조회하고 싶은 보드의 아이디 |
+
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | boards | Board | 조회한 하나의 보드의 객체입니다. |
+| 200 | boards | Board | 조회한 보드의 데이터 |
 
 
 
@@ -200,15 +206,19 @@ GET 요청으로 하나의 보드를 조회할 수 있습니다.
 
 #### GET /boards/{board\_id}/pockets
 
-GET 요청으로 보드의 모든 포켓 조회할 수 있습니다.
+GET 요청으로 해당 보드의 모든 포켓 조회할 수 있습니다.
+
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 조회하고 싶은 보드의 아이디 |
 
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | pockets | List | 하나의 보드의 모든 포켓이 담긴 리스트입니다. |
-
-
+| 200 | pockets | List | 보드의 모든 포켓이 담긴 리스트 |
 
 
 
@@ -218,13 +228,18 @@ GET 요청으로 보드의 모든 포켓 조회할 수 있습니다.
 
 GET 요청으로 보드의 포켓 하나를 조회할 수 있습니다.
 
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 조회하고 싶은 보드의 아이디 |
+| pocket\_id | 조회하고 싶은 포켓의 아이 |
+
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | pocket | Pocket | 조회한 하나의 포켓 객체를 받아옵니다. |
-
-
+| 200 | pocket | Pocket | 조회한 포켓 데이터 |
 
 
 
@@ -232,15 +247,19 @@ GET 요청으로 보드의 포켓 하나를 조회할 수 있습니다.
 
 #### GET /boards/{board\_id}/cards
 
-GET 요청으로 보드의 모든 카드를 조회할 수 있습니다.
+GET 요청으로 해당 보드의 모든 카드를 조회할 수 있습니다.
+
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 조회하고 싶은 보드의 아이디 |
 
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | cards | Card | 해당 보드의 모든 카드가 담긴 리스트를 받아옵니다. |
-
-
+| 200 | cards | Card | 조회한 모든 카드가 담긴 리스트 |
 
 
 
@@ -250,11 +269,18 @@ GET 요청으로 보드의 모든 카드를 조회할 수 있습니다.
 
 GET 요청으로 보드의 특정 카드의 세부사항을 조회할 수 있습니다.
 
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 조회하고 싶은 보드의 아이디 |
+| card\_id | 조회하고 싶은 카드의 아이 |
+
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 200 | card | Card | 해당 보드에 특정 카드 객체를 받아옵니다. |
+| 200 | card | Card | 조회한 카드의 데이터 |
 
 
 
@@ -262,41 +288,166 @@ GET 요청으로 보드의 특정 카드의 세부사항을 조회할 수 있습
 
 
 
-### 하나의 보드 추가하기
+### 보드 추가
 
 #### POST /boards
 
+POST 요청으로 하나의 보드를 추가할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 추가할 보드의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 201 | board | Board | 추가한 보드 데이터 |
 
 
-### 보드에 하나의 포켓 추가하기
+
+### 포켓 추가
 
 #### POST /boards/{board\_id}/pockets
 
+POST 요청으로 하나의 포켓을 추가할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 추가할 포켓의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 201 | card | Card | 추가한 카드 데이터 |
 
 
-### 보드에 하나의 카드 추가하기
+
+### 카드 추가
 
 #### POST /boards/{board\_id}/cards
+
+POST 요청으로 하나의 카드를 추가할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 추가할 카드의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 201 | card | Card | 추가한 카드 데이터 |
 
 
 
 ## PUT
 
-### 보드 수정하기
+### 보드 타이틀 수정
 
 #### PUT /boards/{board\_id}
 
+PUT 요청으로 보드의 타이틀을 수정할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 수할 보드의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | board | Board | 수정한 보드 데이터 |
 
 
-### 포켓 수정하기
+
+### 포켓 타이틀 수정
 
 #### PUT /boards/{board\_id}/pockets/{pocket\_id}
 
+PUT 요청으로 포켓의 타이틀을 수정할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 수정할 포의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | pocket | Pocket | 수정한 포 데이터 |
+
+### 
+
+### 포켓 위치 수정
+
+#### PUT /boards/{board\_id}/pockets/{pocket\_id}
+
+PUT 요청으로 포켓의 위치를 수정할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| position | int | 수정할 포켓의 위치 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | pocket | Pocket | 수정한 포켓 데이터 |
 
 
-### 카드 수정하기
+
+### 카드 타이틀 수정
 
 #### PUT /boards/{board\_id}/cards/{card\_id}
+
+PUT 요청으로 카의 타이틀을 수정할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| title | String | 수정할 카드의 타이틀 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | card | Card | 수정한 카드 데이터 |
+
+### 
+
+### 카드 위치, 포켓 수정
+
+#### PUT /boards/{board\_id}/cards/{card\_id}
+
+PUT 요청으로 카드의 위치와 포켓을 수정할 수 있습니다.
+
+**Request Body :**
+
+| 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :---: |
+| position | int | 수정할 카드의 위 |
+| pocket\_id | String | 수정할 포켓의 아이디 |
+
+#### Response Data  :
+
+| 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
+| :--- | :--- | :--- | :---: |
+| 200 | card | Card | 수정한 카드 데이터 |
 
 
 
@@ -306,15 +457,125 @@ GET 요청으로 보드의 특정 카드의 세부사항을 조회할 수 있습
 
 #### DELETE /boards/{board\_id}
 
+DELETE 요청으로 하나의 보드를 삭제할 수 있습니다.
+
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 삭제할 보드의 아이디 |
+
+#### Response Data  :
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xC0C1;&#xD0DC;&#xCF54;&#xB4DC;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xBCC0;&#xC218;&#xC774;&#xB984;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xD0C0;&#xC785;</th>
+      <th style="text-align:center">&#xB370;&#xC774;&#xD130;&#xC758; &#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">200</td>
+      <td style="text-align:left">result</td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:center">
+        <p>&#xC131;&#xACF5; &#xC5EC;</p>
+        <p>(true:&#xC131;&#xACF5;, false:&#xC2E4;&#xD328;)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 ### 하나의 포켓 삭제하기
 
 #### DELETE /boards/{board\_id}/pockets/{pocket\_id}
 
+DELETE 요청으로 하나의 포켓을 삭제할 수 있습니다.
+
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 카드가 속한 보드의 아이디 |
+| pocket\_id | 삭제할 포켓의 아이 |
+
+#### Response Data  :
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xC0C1;&#xD0DC;&#xCF54;&#xB4DC;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xBCC0;&#xC218;&#xC774;&#xB984;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xD0C0;&#xC785;</th>
+      <th style="text-align:center">&#xB370;&#xC774;&#xD130;&#xC758; &#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">200</td>
+      <td style="text-align:left">result</td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:center">
+        <p>&#xC131;&#xACF5; &#xC5EC;&#xBD80;</p>
+        <p>(true:&#xC131;&#xACF5;, false:&#xC2E4;&#xD328;)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 ### 하나의 카드 삭제하기
 
 #### DELETE /boards/{board\_id}/cards/{card\_id}
+
+DELETE 요청으로 하나의 카드를 삭제할 수 있습니다.
+
+**Path Parameters :** 
+
+| parameter | description |
+| :---: | :---: |
+| board\_id | 카드가 속한 보드의 아이디 |
+| card\_id | 삭제할 카드의 아이디 |
+
+#### Response Data  :
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xC0C1;&#xD0DC;&#xCF54;&#xB4DC;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xBCC0;&#xC218;&#xC774;&#xB984;</th>
+      <th style="text-align:left">&#xB370;&#xC774;&#xD130; &#xD0C0;&#xC785;</th>
+      <th style="text-align:center">&#xB370;&#xC774;&#xD130;&#xC758; &#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">200</td>
+      <td style="text-align:left">result</td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:center">
+        <p>&#xC131;&#xACF5; &#xC5EC;&#xBD80;</p>
+        <p>(true:&#xC131;&#xACF5;, false:&#xC2E4;&#xD328;)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## 화면 설계서
+
+
+
+### 메인화면
+
+
+
+
 

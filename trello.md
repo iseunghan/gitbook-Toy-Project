@@ -575,6 +575,64 @@ DELETE 요청으로 하나의 카드를 삭제할 수 있습니다.
 
 ### 메인화면
 
+![&#xBA54;&#xC778;&#xD654;&#xBA74;](.gitbook/assets/view-.004.jpeg)
+
+### 보드 추가 화면
+
+![](.gitbook/assets/view-.005.jpeg)
+
+
+
+### 보드 추가된 화면
+
+![](.gitbook/assets/view-.006.jpeg)
+
+### 보드 관리페이지 화면
+
+![](.gitbook/assets/view-.007%20%281%29.jpeg)
+
+
+
+### 포켓 추가 화면
+
+![](.gitbook/assets/view-.008%20%281%29.jpeg)
+
+
+
+### 포켓 추가된 화면
+
+![](.gitbook/assets/view-.009.jpeg)
+
+
+
+### 카드 추가 화면
+
+![](.gitbook/assets/view-.010.jpeg)
+
+
+
+### 카드 추가된 화면
+
+![](.gitbook/assets/view-.011.jpeg)
+
+
+
+### 카드 상세보기 화면
+
+![](.gitbook/assets/view-.012.jpeg)
+
+
+
+### 배경 색상 변경 화면
+
+![](.gitbook/assets/view-.013%20%281%29.jpeg)
+
+
+
+### 보드 삭제 화면
+
+![](.gitbook/assets/view-.014.jpeg)
+
 
 
 

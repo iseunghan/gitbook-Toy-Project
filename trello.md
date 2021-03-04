@@ -205,7 +205,8 @@ GET 요청으로 하나의 보드를 조회할 수 있습니다.
 | id | String | 보드 아이디 |
 | title | String | 보드 타이틀 |
 | pockets | List | 포켓 컬렉션 |
-| position | int | 보드의 위 |
+| position | int | 보드의 위치 |
+| boardColor | enum | 보드의 배경 색상 |
 
 
 
@@ -321,12 +322,21 @@ POST 요청으로 하나의 보드를 추가할 수 있습니다.
 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :---: |
 | title | String | 추가할 보드의 타이틀 |
+| boardColor | String | 보드의 배경 색상 |
 
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
 | 201 | board | Board | 추가한 보드 데이터 |
+
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 보드 아이디 |
+| title | String | 보드 타이틀 |
+| pockets | List | 포켓 컬렉션 |
+| position | int | 보드의 위 |
+| boardColor | enum | 보드 배경 색 |
 
 
 
@@ -346,7 +356,14 @@ POST 요청으로 하나의 포켓을 추가할 수 있습니다.
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
-| 201 | card | Card | 추가한 카드 데이터 |
+| 201 | pocket | Pocket | 추가한 포켓 데이 |
+
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 포 아이디 |
+| title | String | 포켓 타이틀 |
+| cards | List | 카드 컬렉션 |
+| position | int | 포켓 위 |
 
 
 
@@ -368,6 +385,14 @@ POST 요청으로 하나의 카드를 추가할 수 있습니다.
 | :--- | :--- | :--- | :---: |
 | 201 | card | Card | 추가한 카드 데이터 |
 
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 카드 아이디 |
+| title | String | 카드 타이틀 |
+| pocketId | Long | 포켓 아이디 |
+| description | String | 카드 설명 |
+| position | int | 카드 위치 |
+
 
 
 ## PUT
@@ -376,22 +401,29 @@ POST 요청으로 하나의 카드를 추가할 수 있습니다.
 
 #### PUT /boards/{board\_id}
 
-PUT 요청으로 보드의 타이틀, 위치, 내용, 배경을 수정할 수 있습니다.
+PUT 요청으로 보드의 타이틀, 위치, 배경 색을 수정할 수 있습니다.
 
 **Request Body :**
 
 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :---: |
 | title | String | 수정할 보드의 타이틀 |
-| color | String | 수정할 보드의 배경 색상 |
+| boardColor | String | 수정할 보드의 배경 색상 |
 | position | int | 수정할 보드의 위치 |
-| content | .. | .. |
 
 #### Response Data  :
 
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
 | 200 | board | Board | 수정한 보드 데이터 |
+
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 보드 아이디 |
+| title | String | 보드 타이틀 |
+| pockets | List | 포켓 컬렉션 |
+| position | int | 보드의 위치 |
+| boardColor | enum | 보드 배경 색상 |
 
 
 
@@ -415,6 +447,13 @@ PUT 요청으로 포켓의 타이틀, 위치, 내용 수정할 수 있습니다.
 | :--- | :--- | :--- | :---: |
 | 200 | pocket | Pocket | 수정한 포켓 데이터 |
 
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 포 아이디 |
+| title | String | 포켓 타이틀 |
+| cards | List | 카드 컬렉션 |
+| position | int | 포켓 위 |
+
 
 
 ### 카드 수정
@@ -437,6 +476,14 @@ PUT 요청으로 카드의 타이틀, 위치, 내용을 수정할 수 있습니�
 | 상태코드 | 데이터 변수이름 | 데이터 타입 | 데이터의 설명 |
 | :--- | :--- | :--- | :---: |
 | 200 | card | Card | 수정한 카드 데이터 |
+
+| Data | Type | Description |
+| :--- | :--- | :--- |
+| id | String | 카드 아이디 |
+| title | String | 카드 타이틀 |
+| pocketId | Long | 포켓 아이디 |
+| description | String | 카드 설명 |
+| position | int | 카드 위치 |
 
 
 

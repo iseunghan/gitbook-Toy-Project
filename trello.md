@@ -431,7 +431,7 @@ PUT 요청으로 보드의 타이틀, 위치, 배경 색을 수정할 수 있습
 
 #### PUT /boards/{board\_id}/pockets/{pocket\_id}
 
-PUT 요청으로 포켓의 타이틀, 위치, 내용 수정할 수 있습니다.
+PUT 요청으로 포켓의 타이틀, 위치를 수정할 수 있습니다.
 
 **Request Body :**
 
@@ -439,7 +439,6 @@ PUT 요청으로 포켓의 타이틀, 위치, 내용 수정할 수 있습니다.
 | :--- | :--- | :---: |
 | title | String | 수정할 포켓의 타이틀 |
 | position | int | 수정할 포켓의 위치 |
-| content | .. | .. |
 
 #### Response Data  :
 
@@ -460,7 +459,7 @@ PUT 요청으로 포켓의 타이틀, 위치, 내용 수정할 수 있습니다.
 
 #### PUT /boards/{board\_id}/cards/{card\_id}
 
-PUT 요청으로 카드의 타이틀, 위치, 내용을 수정할 수 있습니다.
+PUT 요청으로 카드의 타이틀, 위치, 설을 수정할 수 있습니다.
 
 **Request Body :**
 
@@ -469,7 +468,7 @@ PUT 요청으로 카드의 타이틀, 위치, 내용을 수정할 수 있습니�
 | title | String | 수정할 카드의 타이틀 |
 | position | int | 수정할 카드의 위치 |
 | pocket\_id | String | 수정할 포켓 아이디 |
-| .. | .. | 수정할 카드의 내용 |
+| description | String | 수정할 카드의 설 |
 
 #### Response Data  :
 
